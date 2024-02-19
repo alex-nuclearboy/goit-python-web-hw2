@@ -37,9 +37,6 @@ $ pipenv --python 3.10
 # Activate the virtual environment
 $ pipenv shell
 
-# Install dependencies
-$ pipenv install -r requirements.txt
-
 # Install the package in editable mode within the virtual environment
 $ pipenv install -e .
 

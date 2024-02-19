@@ -9,11 +9,6 @@ Welcome to the "Personal Assistant" bot project! This bot is crafted with a focu
 Distinguished by its user information presentation and command flexibility, this project stands as a testament to the versatility and power of Python-based solutions.
 From streamlined contact management to intelligent note-taking and file organization, every aspect of the bot is designed to make daily digital interactions more productive and seamless.
 
-## Documentation
-
-In addition to the source code, this repository includes UML diagrams of the project, providing a visual representation of the system's architecture and interactions.
-These diagrams are available in both PNG and [draw.io](https://app.diagrams.net/) formats, allowing for easy viewing.
-
 ## Features
 
 -   **Contact Management:** Manage your contacts with details like names, phone numbers, emails, addresses and birthdays.
@@ -27,24 +22,59 @@ These diagrams are available in both PNG and [draw.io](https://app.diagrams.net/
 
 ## Getting Started
 
+Install the package in a virtual environment using `pipenv`
+
 ```bash
-# Clone this project
-$ git clone https://github.com/alex-nuclearboy/cli-personal-assistant.git
+# Clone the project
+$ git clone https://github.com/alex-nuclearboy/goit-python-web-hw2.git
+
+# Navigate to the project directory
+$ cd goit-python-web-hw2
+
+# Create a virtual environment specifying Python version
+$ pipenv --python 3.10
+
+# Activate the virtual environment
+$ pipenv shell
 
 # Install dependencies
-$ pip install -e .
+$ pipenv install -r requirements.txt
 
-# Run the project
+# Install the package in editable mode within the virtual environment
+$ pipenv install -e .
+
+# Run the project to start the Personal Assistant
 $ personal-assistant
 
-# Create or upload a file by entering its name
+# Follow the prompts to create or load a file by entering its name
 $ <filename>
 
-# Display the list of commands
+# Use the help command to display available commands
 $ help
 
-# Uninstall
-$ pip uninstall Personal-Assistant
+# To uninstall the package
+$ pipenv uninstall personal-assistant
+```
+
+Using the package in a Docker container
+```bash
+# Clone the project
+$ git clone https://github.com/alex-nuclearboy/goit-python-web-hw2.git
+
+# Navigate to the project directory
+$ cd goit-python-web-hw2
+
+# Build the Docker image for the Personal Assistant
+$ docker build -t personal-assistant .
+
+# Run the Personal Assistant in a Docker container
+$ docker run -it -p 4000:5000 personal-assistant
+
+# Follow the prompts to create or load a file by entering its name
+$ <filename>
+
+# Use the help command to display available commands
+$ help
 ```
 
 ## All Commands

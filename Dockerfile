@@ -19,5 +19,8 @@ EXPOSE 5000
 # Define environment variable
 ENV NAME PersonalAssistant
 
+# Adjust the PYTHONPATH environment variable
+ENV PYTHONPATH "${PYTHONPATH}:${APP_HOME}"
+
 # Run main.py when the container launches
 ENTRYPOINT ["python", "src/main.py"]

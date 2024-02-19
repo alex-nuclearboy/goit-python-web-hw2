@@ -4,10 +4,10 @@ from prompt_toolkit import PromptSession
 from prompt_toolkit.completion import WordCompleter
 from prompt_toolkit.lexers import PygmentsLexer
 from pygments.lexers.sql import SqlLexer
-from classes import AddressBook, Name, Phone, Email, Address, Record
-from classes import Notebook, Note
-from classes import BasicInterface, ConsoleInterface
-from sorter import main as sort_main
+from src.classes import AddressBook, Name, Phone, Email, Address, Record
+from src.classes import Notebook, Note
+from src.classes import BasicInterface, ConsoleInterface
+from src.sorter import main as sort_main
 import random
 import textwrap
 

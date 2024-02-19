@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name='Personal Assistant',
+    name='personal-assistant',
     version='1.1',
     description='Data and File Assistant',
     author='Hufflepuff',

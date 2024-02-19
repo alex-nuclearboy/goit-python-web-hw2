@@ -14,7 +14,7 @@ setup(
           language interface. The bot leverages advanced functionalities\
           to understand user input and provide relevant suggestions\
           based on context.',
-    url='https://github.com/alex-nuclearboy/cli-personal-assistant.git',
+    url='https://github.com/alex-nuclearboy/goit-python-web-hw2.git',
     entry_points={
         'console_scripts': [
             'personal-assistant = src.main:main'

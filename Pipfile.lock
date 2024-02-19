@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2942a0f391d4ac8caca19e42a6556622cb30a9e1e7973c1ab7ae30114db27907"
+            "sha256": "1c12ff393c48e2fcd8ce405ee897f098fe6dcdea4189d480fb0694eca4d4f303"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,8 +18,7 @@
     },
     "default": {
         "personal-assistant": {
-            "editable": true,
-            "path": "."
+            "version": "==1.1"
         },
         "prompt-toolkit": {
             "hashes": [
